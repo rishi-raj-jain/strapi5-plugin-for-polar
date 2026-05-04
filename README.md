@@ -20,7 +20,7 @@ A [Strapi 5](https://strapi.io/) plugin to manage **[Polar](https://polar.sh) pr
 1. Add the plugin to your Strapi project:
 
 ```bash
-npm i strapi5-plugin-for-polar axios standardwebhooks
+npm i strapi5-plugin-for-polar
 ```
 
 2. Restart Strapi:
