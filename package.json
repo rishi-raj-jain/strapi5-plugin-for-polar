@@ -1,0 +1,84 @@
+{
+  "version": "1.0.0",
+  "keywords": [],
+  "type": "commonjs",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": {
+      "types": "./dist/admin/src/index.d.ts",
+      "source": "./admin/src/index.ts",
+      "import": "./dist/admin/index.mjs",
+      "require": "./dist/admin/index.js",
+      "default": "./dist/admin/index.js"
+    },
+    "./strapi-server": {
+      "types": "./dist/server/src/index.d.ts",
+      "source": "./server/src/index.ts",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "default": "./dist/server/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "strapi-plugin build",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link",
+    "verify": "strapi-plugin verify",
+    "test:ts:front": "tsc -p admin/tsconfig.json",
+    "test:ts:back": "tsc -p server/tsconfig.json",
+    "format": "prettier --write '**/*' --ignore-unknown"
+  },
+  "dependencies": {
+    "axios": "^1.16.0",
+    "standardwebhooks": "^1.0.0"
+  },
+  "devDependencies": {
+    "@strapi/design-system": "^2.2.0",
+    "@strapi/icons": "^2.2.0",
+    "@strapi/sdk-plugin": "^6.1.0",
+    "@strapi/strapi": "^5.44.0",
+    "@strapi/typescript-utils": "^5.44.0",
+    "@types/react": "^18.3.28",
+    "@types/react-dom": "^18.3.7",
+    "prettier": "^3.8.3",
+    "prettier-plugin-organize-imports": "^4.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-intl": "^6.8.9",
+    "react-router-dom": "^6.30.3",
+    "styled-components": "^6.4.1",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "@strapi/design-system": "^2.2.0",
+    "@strapi/icons": "^2.2.0",
+    "@strapi/sdk-plugin": "^6.1.0",
+    "@strapi/strapi": "^5.44.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-intl": "^6.8.9",
+    "react-router-dom": "^6.30.3",
+    "styled-components": "^6.4.1"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "strapi5-plugin-for-polar",
+    "displayName": "Strapi 5 Plugin for Polar",
+    "description": "A Strapi 5 plugin to manage Polar products and subscriptions directly from the admin panel, and provide a simple front-end checkout integration via a ready-to-use Javascript snippet."
+  },
+  "name": "strapi5-plugin-for-polar",
+  "description": "A Strapi 5 plugin to manage Polar products and subscriptions directly from the admin panel, and provide a simple front-end checkout integration via a ready-to-use Javascript snippet.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rishi-raj-jain/strapi5-plugin-for-polar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rishi-raj-jain/strapi5-plugin-for-polar/issues"
+  },
+  "homepage": "https://github.com/rishi-raj-jain/strapi5-plugin-for-polar#readme",
+  "author": "Rishi Raj Jain <jain71000@gmail.com>"
+}
