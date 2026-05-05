@@ -1,8 +1,8 @@
-# From content to revenue: Polar + Strapi
+# Get Started with the Polar Plugin for Strapi
 
-[Polar](https://polar.sh/) is an open-source billing infrastructure platform designed specifically for developers who want to monetize their software without the complexity of traditional payment systems.
+If you want to manage both your content and billing in one place, [Polar](https://polar.sh/) is an open-source billing platform that empowers developers to easily monetize their software, while [Strapi](https://strapi.io/) is a leading open-source headless CMS for structuring content and building robust APIs. Together, they give editors an intuitive admin panel and developers complete flexibility and control.
 
-In this guide, you'll learn how to integrate [Strapi](https://strapi.io/) with Polar for easier content management and billing. Strapi is an open-source headless CMS that lets you model content, ship REST and GraphQL APIs, and provide editors with a structured admin—while developers retain control over code and hosting. Because Strapi manages your content but leaves front-end presentation to frameworks like Next.js or Astro, integrating payment configuration directly in the Strapi admin keeps everything you need to manage your site in one place.
+By integrating the [Polar plugin for Strapi](https://github.com/rishi-raj-jain/strapi5-plugin-for-polar), you can manage both your content and your payment configuration directly within the Strapi admin. This keeps everything you need to run your site (content, billing, and checkout) accessible in one place, making setup and ongoing management much simpler.
 
 ## Why use Polar with Strapi?
 
